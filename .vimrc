@@ -200,6 +200,8 @@ Plug 'scrooloose/nerdtree'              " NerdTree
 Plug 'xuyuanp/nerdtree-git-plugin'      " NerdTree Git
 Plug 'ryanoasis/vim-devicons'           " Devicons
 Plug 'nathanaelkane/vim-indent-guides'  " Indent Guides
+Plug 'tpope/vim-fugitive'               " Vim Fugitive
+
 
 call plug#end()
 
@@ -237,7 +239,6 @@ let g:NERDTreeIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
-
 
 " Indent Guides
 "

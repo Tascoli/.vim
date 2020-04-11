@@ -152,3 +152,12 @@ Atalho | Ação
     :IndentGuidesToggle
     ```
 
+- [Vim Fugitive](https://vimawesome.com/plugin/fugitive-vim):
+
+    Permite realizar operações do git dentro vim. Segue a lista com os principais comandos:
+    - ***Gstatus*** -> ```git status```.
+    - ***Gwrite*** -> ```git add . ```.
+    - ***Gread*** -> ```git checkout --filename```.
+    - ***Glog*** -> ```git log```.
+    - ***Gcommit*** -> ```git commit```.
+    - ***Gvdiff*** -> ```git diff + vsplit```.
