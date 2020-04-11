@@ -196,6 +196,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'          " Airline
 Plug 'vim-airline/vim-airline-themes'   " Airline Themes
+Plug 'scrooloose/nerdtree'              " NerdTree
+Plug 'xuyuanp/nerdtree-git-plugin'      " NerdTree Git
+Plug 'ryanoasis/vim-devicons'           " Devicons
 
 call plug#end()
 
@@ -214,4 +217,24 @@ let g:airline_powerline_fonts = 1 " Integration Powerline fonts
 let g:airline_theme='bubblegum'
 " options: bubblegum, luna, fairyfloss, fruit_puncha, hybridline,
 " jellybeans, kolor, molokai, murmur, onedark, ravenpower, tomorrow,
+
+" NerdTree
+"
+map <C-b> :NERDTreeToggle<CR>
+
+
+" Nerd Git Plugin
+"
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
 

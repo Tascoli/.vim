@@ -127,3 +127,20 @@ Atalho | Ação
     let g:airline_theme='<theme>'
     ```
 
+- [NerdTree](https://vimawesome.com/plugin/nerdtree-red):
+
+    - ***Crtl + b*** -> Abre e Fecha o NerdTree
+    - ***Shift + i*** -> Mostra arquivos e diretórios ocultos.
+    - ***Choose file***:
+        - t: open in new tab
+        - T: open in new tab silently
+
+- [Vim Nerd Git Plugin](https://vimawesome.com/plugin/nerdtree-git-plugin)
+
+    Adiciona simblos git para o NerdTree.
+
+- [Vim Devicons](https://vimawesome.com/plugin/vim-devicons):
+
+    Adiciona icones de desenvolvimento.
+
+
