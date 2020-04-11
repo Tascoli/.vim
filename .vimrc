@@ -194,8 +194,24 @@ colorscheme afterglow
 ""      --------
 call plug#begin('~/.vim/plugged')
 
-" Coloque aqui seus pluings
+Plug 'vim-airline/vim-airline'          " Airline
+Plug 'vim-airline/vim-airline-themes'   " Airline Themes
 
-" Initialize plugin system
 call plug#end()
+
+
+"       PLUGINS CONF
+"       -----------
+
+" Airline
+"
+set noshowmode          " Don't show mode(insert, visual, etc...)
+let g:airline_powerline_fonts = 1 " Integration Powerline fonts
+" let g:airline_symbols = 1 " Integration Powerline Symbols
+
+" Airline Themes
+"
+let g:airline_theme='bubblegum'
+" options: bubblegum, luna, fairyfloss, fruit_puncha, hybridline,
+" jellybeans, kolor, molokai, murmur, onedark, ravenpower, tomorrow,
 

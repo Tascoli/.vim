@@ -64,4 +64,66 @@ call plug#begin('~/.vim/plugged')
 " Initialize plugin system
 call plug#end()
 ```
+A configuraçao básica e customizações de cada plugin está no arquivo ```.vimrc```.
+
+#### Vimrc - Principais Configurações e Atalhos
+
+***Copy and Paste*** para entendermos como usar o copiar e colar do vim é necessário entender alguns conceitos:
+
+Sistemas como Linux e Unix-like possuem duas áreas de transferencias.
+
+- Clipboard que é acessada com o +
+- Primária que é acessada com o *
+
+Já o Windows possui apenas o CLIPBOARD representadada pelo+.
+
+Para copiarmos textos de outros programas para vim e do vim para outros programas precimos acionar a CLIPBOARD.
+Para facilitar o processo podemos definir atalhos no ```.vimrc```.
+
+A confituração fica da seguinte forma:
+
+```vim
+" COPY and PASTE
+
+set clipboard=unnamedplus
+
+noremap <leader>y "+y  # Copia para Clipboard
+noremap <leader>p "+p  # Cola do Clipboard
+noremap <leader>Y "*y  # Copia para área primária
+noremap <leader>P "*p  # Cola para área primária
+```
+#### Configurações de atalhos
+
+- Leader Key = **Space**
+
+- **TAB** and **SHIFT-TAB** com fucionalidade igual a de outros editores.
+
+
+Atalho | Ação
+:--------|:------:|
+**Leader + y** | Copia para área de transferência.
+**Leader + p** | Cola da área de transferência.
+**Leader + Y** | Copia para área primária.
+**Leader + P** | Cola da área primária.
+**Leader + n** | TabPrevious
+**Leader + m** | TabNext
+**Ctrl + l**   | Limpa highlight da busca.
+
+
+#### Configurações e atalhos dos plugins instalados:
+
+
+- [Vim Airline](https://vimawesome.com/plugin/vim-airline-superman):
+
+    Adiciona a barra de status inferior no vim.
+
+- [Vim Airline Themes](https://vimawesome.com/plugin/vim-airline-themes):
+
+    Para visualizar os temas visite o [site](https://github.com/vim-airline/vim-airline/wiki/Screenshots) alugmas sugestões: luna, light, wombat, molokai, bubblegum.
+
+    Configuração  do ***.vimrc***:
+
+    ```vim
+    let g:airline_theme='<theme>'
+    ```
 
