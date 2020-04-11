@@ -143,4 +143,12 @@ Atalho | Ação
 
     Adiciona icones de desenvolvimento.
 
+- [IndentGuides](https://vimawesome.com/plugin/indent-guides):
+
+    Adiciona guias de indentação ao vim.
+    ```vim
+    :IndentGuidesEnable
+    :IndentGuidesDisable
+    :IndentGuidesToggle
+    ```
 

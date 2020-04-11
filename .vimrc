@@ -199,6 +199,7 @@ Plug 'vim-airline/vim-airline-themes'   " Airline Themes
 Plug 'scrooloose/nerdtree'              " NerdTree
 Plug 'xuyuanp/nerdtree-git-plugin'      " NerdTree Git
 Plug 'ryanoasis/vim-devicons'           " Devicons
+Plug 'nathanaelkane/vim-indent-guides'  " Indent Guides
 
 call plug#end()
 
@@ -222,7 +223,6 @@ let g:airline_theme='bubblegum'
 "
 map <C-b> :NERDTreeToggle<CR>
 
-
 " Nerd Git Plugin
 "
 let g:NERDTreeIndicatorMapCustom = {
@@ -237,4 +237,9 @@ let g:NERDTreeIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
+
+
+" Indent Guides
+"
+let g:indent_guides_enable_on_vim_startup = 1   " Enable on starup
 
