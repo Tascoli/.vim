@@ -38,4 +38,30 @@ Alguns comandos interessantes:
 	:set invlist 		" Permite visualizar os espaços em branco - útil para corrigir o 'trailing'.
 
 
+#### [VIM Plug](https://github.com/junegunn/vim-plug)
+
+- Vim
+```zsh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+- NeoVim
+```zsh
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+Cole no seu ```.vimrc```:
+
+```vim
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" Coloque aqui seus pluings
+
+" Initialize plugin system
+call plug#end()
+```
 

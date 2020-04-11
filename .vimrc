@@ -190,3 +190,12 @@ colorscheme afterglow
 "" inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 "==============================================================================
 
+""      VIM PLUG
+""      --------
+call plug#begin('~/.vim/plugged')
+
+" Coloque aqui seus pluings
+
+" Initialize plugin system
+call plug#end()
+
