@@ -161,3 +161,13 @@ Atalho | Ação
     - ***Glog*** -> ```git log```.
     - ***Gcommit*** -> ```git commit```.
     - ***Gvdiff*** -> ```git diff + vsplit```.
+
+- [Goyo](https://vimawesome.com/plugin/goyo-vim)
+
+    Vim sem distrações, ideal para escrever textos.
+
+    ```vim
+    :Goyo               " Toggle Goyo
+    :Goyo [dimension]   " Turn on or resize Goyo
+    :Goyo!              " Turn Goyo off
+    ```

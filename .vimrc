@@ -201,7 +201,7 @@ Plug 'xuyuanp/nerdtree-git-plugin'      " NerdTree Git
 Plug 'ryanoasis/vim-devicons'           " Devicons
 Plug 'nathanaelkane/vim-indent-guides'  " Indent Guides
 Plug 'tpope/vim-fugitive'               " Vim Fugitive
-
+Plug 'junegunn/goyo.vim'                " Distraction Free
 
 call plug#end()
 
