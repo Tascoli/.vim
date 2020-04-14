@@ -141,6 +141,7 @@ map <Leader>m <esc>:tabnext<CR>
 " MUST be inserted BEFORE the colorscheme command
 
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+" autocmd BufWinEnter * match ExtraWhitespace /^\s* \s*\|\s\+$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 
 
@@ -201,6 +202,7 @@ Plug 'xuyuanp/nerdtree-git-plugin'      " NerdTree Git
 Plug 'ryanoasis/vim-devicons'           " Devicons
 Plug 'nathanaelkane/vim-indent-guides'  " Indent Guides
 Plug 'tpope/vim-fugitive'               " Vim Fugitive
+Plug 'airblade/vim-gitgutter'           " GitGutter
 Plug 'junegunn/goyo.vim'                " Distraction Free
 
 call plug#end()
@@ -212,10 +214,15 @@ call plug#end()
 " Airline
 "
 set noshowmode          " Don't show mode(insert, visual, etc...)
-let g:airline_powerline_fonts = 1 " Integration Powerline fonts
-" let g:airline_symbols = 1 " Integration Powerline Symbols
+let g:airline#extensions#tabline#enabled = 1    " Enable airline extension
+" let g:airline_symbols = 1                       " Integration Powerline Symbols
+let g:airline_powerline_fonts = 1               " Integration Powerline fonts
+let g:airline#extensions#whitespace#enabled = 1 " Whitespace Machine enable/disable detection of whitespace errors.
+
+
 
 " Airline Themes
+
 "
 let g:airline_theme='bubblegum'
 " options: bubblegum, luna, fairyfloss, fruit_puncha, hybridline,
@@ -244,3 +251,6 @@ let g:NERDTreeIndicatorMapCustom = {
 "
 let g:indent_guides_enable_on_vim_startup = 1   " Enable on starup
 
+" GitGutter
+"
+ let g:gitgutter_highlight_lines = 1    " To turn on line highlighting by default

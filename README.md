@@ -171,3 +171,7 @@ Atalho | Ação
     :Goyo [dimension]   " Turn on or resize Goyo
     :Goyo!              " Turn Goyo off
     ```
+- [GitGutter](https://github.com/airblade/vim-gitgutter)
+
+    Visualiza na barra lateral as modificações do arquivo.
+
