@@ -175,3 +175,14 @@ Atalho | Ação
 
     Visualiza na barra lateral as modificações do arquivo.
 
+- [CtrlP](https://vimawesome.com/plugin/ctrlp-vim-everything-has-changed)
+
+    Com o CtrlP aberto:
+
+    - ````<F5>```` -> Atualiza o cache.
+    - ```<c-f>``` | ```<c-b>``` -> Troca entre os modos.
+    - ```<c-d>``` -> Nome do arquivo ao invés do caminho inteiro.
+    - ```<c-r>``` -> Modo Reges.
+    - ```<c-t>```|```<c-v>```|```<c-x>``` -> Abre em nova aba, divide a tela vertical ou horizontal.
+    - ```<c-z>``` -> Marque/desmarque arquivos e depois ```<c-o>``` para abrir.
+

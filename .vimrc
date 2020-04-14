@@ -52,17 +52,17 @@ highlight colorcolumn ctermbg=243
 " INDETENTION
 "-------------
 " Set TAB and Shift-TAB
-nnoremap <Tab> >>_
-nnoremap <S-Tab> <<_
-inoremap <S-Tab> <C-D>
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
-        " Other Options
-        "" " easier moving of code blocks
-        "" " Try to go into visual mode (v), thenselect several lines of code here and
-        "" " then press ``>`` several times.
-        "" vnoremap < <gv  " better indentation
-        "" vnoremap > >gv  " better indentation
+"nnoremap <Tab> >>_
+"nnoremap <S-Tab> <<_
+"inoremap <S-Tab> <C-D>
+"vnoremap <Tab> >gv
+"vnoremap <S-Tab> <gv
+" Other Options
+"" " easier moving of code blocks
+"" " Try to go into visual mode (v), thenselect several lines of code here and
+"" " then press ``>`` several times.
+vnoremap < <gv  " better indentation
+vnoremap > >gv  " better indentation
 
 " SEARCH - Make search case insensitive
 set hlsearch
@@ -204,6 +204,7 @@ Plug 'nathanaelkane/vim-indent-guides'  " Indent Guides
 Plug 'tpope/vim-fugitive'               " Vim Fugitive
 Plug 'airblade/vim-gitgutter'           " GitGutter
 Plug 'junegunn/goyo.vim'                " Distraction Free
+Plug 'kien/ctrlp.vim'                   " CtrlP - Search engine
 
 call plug#end()
 
@@ -253,4 +254,4 @@ let g:indent_guides_enable_on_vim_startup = 1   " Enable on starup
 
 " GitGutter
 "
- let g:gitgutter_highlight_lines = 1    " To turn on line highlighting by default
+" let g:gitgutter_highlight_lines = 1    " To turn on line highlighting by default
