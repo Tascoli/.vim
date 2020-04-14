@@ -1,4 +1,4 @@
-# Vim
+# VIM
 
 Este repositório se propõe a organizar os plugins instalados com o gerenciador de
 plugins VIM PLUG.
@@ -185,4 +185,15 @@ Atalho | Ação
     - ```<c-r>``` -> Modo Reges.
     - ```<c-t>```|```<c-v>```|```<c-x>``` -> Abre em nova aba, divide a tela vertical ou horizontal.
     - ```<c-z>``` -> Marque/desmarque arquivos e depois ```<c-o>``` para abrir.
+
+
+- [Vim Nerd Commenter](https://vimawesome.com/plugin/the-nerd-commenter):
+
+    Plugin para comentar o código.
+
+    - ***Leader + cc*** -> Comenta a linha atual ou o texto selicionado no MODO VISUAL.
+
+    - ***Leader + cu*** -> Descomenta a linha atual ou o texto selicionado no MODO VISUAL.
+
+    Para outros atalhos veja a documentação.
 

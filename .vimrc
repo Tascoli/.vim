@@ -199,6 +199,7 @@ Plug 'vim-airline/vim-airline'          " Airline
 Plug 'vim-airline/vim-airline-themes'   " Airline Themes
 Plug 'scrooloose/nerdtree'              " NerdTree
 Plug 'xuyuanp/nerdtree-git-plugin'      " NerdTree Git
+Plug 'scrooloose/nerdcommenter'         " NerdTree commenter
 Plug 'ryanoasis/vim-devicons'           " Devicons
 Plug 'nathanaelkane/vim-indent-guides'  " Indent Guides
 Plug 'tpope/vim-fugitive'               " Vim Fugitive
@@ -255,3 +256,29 @@ let g:indent_guides_enable_on_vim_startup = 1   " Enable on starup
 " GitGutter
 "
 " let g:gitgutter_highlight_lines = 1    " To turn on line highlighting by default
+
+"   NerdCommenter
+
+"" Add spaces after comment delimiters by default
+"let g:NERDSpaceDelims = 1
+
+"" Use compact syntax for prettified multi-line comments
+"let g:NERDCompactSexyComs = 1
+
+"" Align line-wise comment delimiters flush left instead of following code indentation
+"let g:NERDDefaultAlign = 'left'
+
+"" Set a language to use its alternate delimiters by default
+"let g:NERDAltDelims_java = 1
+
+"" Add your own custom formats or override the defaults
+"let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+"" Allow commenting and inverting empty lines (useful when commenting a region)
+"let g:NERDCommentEmptyLines = 1
+
+"" Enable trimming of trailing whitespace when uncommenting
+"let g:NERDTrimTrailingWhitespace = 1
+
+"" Enable NERDCommenterToggle to check all selected lines is commented or not
+"let g:NERDToggleCheckAllLines = 1
