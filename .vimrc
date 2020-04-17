@@ -206,7 +206,6 @@ Plug 'tpope/vim-fugitive'               " Vim Fugitive
 Plug 'airblade/vim-gitgutter'           " GitGutter
 Plug 'junegunn/goyo.vim'                " Distraction Free
 Plug 'kien/ctrlp.vim'                   " CtrlP - Search engine
-Plug 'ervandew/supertab'                " Super TAB
 
 call plug#end()
 
