@@ -14,18 +14,33 @@ Este arquivo irá conter algumas descrições das configurações aplicadas em c
 
 Dependencias:
 
-	sudo apt install build-essential libncurses-dev vim vim-gtk3 ack exuberant-ctags ncurses-term
+	sudo apt install build-essential libncurses-dev ack exuberant-ctags ncurses-term
 
 Siga os seguintes passos:
 
 	git clone https://github.com/vim/vim.git
 	cd vim/src
-	./configure --enable-rubyinterp --enable-pythoninterp --with-features=huge --prefix=/opt/vim --with-tlib=ncurses
-	sudo su
-	make && make install
-	cd /opt/vim/share/vim
+	./configure --enable-rubyinterp --enable-pythoninterp --with-features=huge --prefix=/usr/local/ --with-tlib=ncurses
+	sudo make VIMRUNTIMEDIR=/usr/local/share/vim/vim82
+	sudo make install
 	which vim
 	vim --version
+
+***Atenção*** Após a intalação não delete o diretório do vim com o código
+fonte.
+
+Para fazer o **UPDATE**(atualização) do seu vim:
+
+Entre no diretório de instalação.
+
+    cd vim/src
+    sudo make distclean
+    git pull
+	./configure --enable-rubyinterp --enable-pythoninterp --with-features=huge --prefix=/usr/local/ --with-tlib=ncurses
+	sudo make VIMRUNTIMEDIR=/usr/local/vim/share/vim/vim82
+	sudo make install
+
+---
 
 Alguns comandos interessantes:
 
