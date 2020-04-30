@@ -206,6 +206,7 @@ Plug 'tpope/vim-fugitive'               " Vim Fugitive
 Plug 'airblade/vim-gitgutter'           " GitGutter
 Plug 'junegunn/goyo.vim'                " Distraction Free
 Plug 'kien/ctrlp.vim'                   " CtrlP - Search engine
+Plug 'raimondi/delimitmate'             " Autoclose quotes, parentheses, etc ...
 
 call plug#end()
 
