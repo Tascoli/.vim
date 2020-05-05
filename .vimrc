@@ -137,33 +137,6 @@ map <Leader>m <esc>:tabnext<CR>
 "" map <c-l> <c-w>l
 "" map <c-h> <c-w>h
 
-" SHOW WHITHESPACE
-" MUST be inserted BEFORE the colorscheme command
-
-autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-" autocmd BufWinEnter * match ExtraWhitespace /^\s* \s*\|\s\+$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-
-
-"==============================================================================
-"   COLORSCHEME
-"==============================================================================
-" mkdir -p ~/.vim/colors && cd ~/.vim/colors
-" Download and put your colorschemes in colors/
-"
-set t_Co=256
-colorscheme afterglow
-"
-"" Opções Colorscheme:
-" afterglow, wombat256mod, railscasts2
-"
-" Set colortheme for file type
-" autocmd WinEnter,FileType * colorscheme wombat256mod
-" autocmd WinEnter,FileType javascript colorscheme desert256
-" autocmd WinEnter,FileType html,css colorscheme molokai  " This includes default filetype colorscheme.
-" autocmd WinEnter,FileType python colorscheme dracula
-"" Some options: gruvbox, materialbox, cobalt2, codedark, dracula, molokai, wombat256mod
-""happy_hacking, jelleybeans, kruby, landscape, lapis256, monokai-phoenix, tir_black, inkpot
 
 "==============================================================================
 " Omnifunction
@@ -207,8 +180,37 @@ Plug 'airblade/vim-gitgutter'           " GitGutter
 Plug 'junegunn/goyo.vim'                " Distraction Free
 Plug 'kien/ctrlp.vim'                   " CtrlP - Search engine
 Plug 'raimondi/delimitmate'             " Autoclose quotes, parentheses, etc ...
+Plug 'tomasr/molokai'                   " Molokai Colorscheme
 
 call plug#end()
+
+" SHOW WHITHESPACE
+" MUST be inserted BEFORE the colorscheme command
+
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+" autocmd BufWinEnter * match ExtraWhitespace /^\s* \s*\|\s\+$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+
+"==============================================================================
+"   COLORSCHEME
+"==============================================================================
+" mkdir -p ~/.vim/colors && cd ~/.vim/colors
+" Download and put your colorschemes in colors/
+"
+set t_Co=256
+colorscheme afterglow
+"
+"" Opções Colorscheme:
+" afterglow, wombat256mod, railscasts2
+"
+" Set colortheme for file type
+" autocmd WinEnter,FileType * colorscheme wombat256mod
+" autocmd WinEnter,FileType javascript colorscheme desert256
+" autocmd WinEnter,FileType html,css colorscheme molokai  " This includes default filetype colorscheme.
+" autocmd WinEnter,FileType python colorscheme dracula
+"" Some options: gruvbox, materialbox, cobalt2, codedark, dracula, molokai, wombat256mod
+""happy_hacking, jelleybeans, kruby, landscape, lapis256, monokai-phoenix, tir_black, inkpot
+
 
 
 "       PLUGINS CONF
@@ -221,7 +223,6 @@ let g:airline#extensions#tabline#enabled = 1    " Enable airline extension
 " let g:airline_symbols = 1                       " Integration Powerline Symbols
 let g:airline_powerline_fonts = 1               " Integration Powerline fonts
 let g:airline#extensions#whitespace#enabled = 1 " Whitespace Machine enable/disable detection of whitespace errors.
-
 
 
 " Airline Themes
