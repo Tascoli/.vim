@@ -14,13 +14,13 @@ Este arquivo irá conter algumas descrições das configurações aplicadas em c
 
 Dependencias:
 
-	sudo apt install build-essential libncurses-dev ack exuberant-ctags ncurses-term
+	sudo apt install build-essential libncurses-dev ack exuberant-ctags ncurses-term libncurses-dev libncurses5-dev libgtk2.0-dev libatk1.0-dev libcairo2-dev python-dev python3-dev ruby-dev
 
 Siga os seguintes passos:
 
 	git clone https://github.com/vim/vim.git
 	cd vim/src
-	./configure --enable-rubyinterp --enable-pythoninterp --with-features=huge --prefix=/usr/local/ --with-tlib=ncurses
+	./configure --with-features=huge --enable-cscope --enable-multibyte --enable-rubyinterp --enable-pythoninterp --enable-python3interp --prefix=/usr/local/ --with-tlib=ncurses
 	sudo make VIMRUNTIMEDIR=/usr/local/share/vim/vim82
 	sudo make install
 	which vim
@@ -36,7 +36,7 @@ Entre no diretório de instalação.
     cd vim/src
     sudo make distclean
     git pull
-	./configure --enable-rubyinterp --enable-pythoninterp --with-features=huge --prefix=/usr/local/ --with-tlib=ncurses
+	./configure --with-features=huge --enable-cscope --enable-multibyte --enable-rubyinterp --enable-pythoninterp --enable-python3interp --prefix=/usr/local/ --with-tlib=ncurses
 	sudo make VIMRUNTIMEDIR=/usr/local/vim/share/vim/vim82
 	sudo make install
 
