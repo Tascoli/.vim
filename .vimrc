@@ -182,6 +182,12 @@ Plug 'kien/ctrlp.vim'                   " CtrlP - Search engine
 Plug 'raimondi/delimitmate'             " Autoclose quotes, parentheses, etc ...
 Plug 'tomasr/molokai'                   " Molokai Colorscheme
 
+Plug 'SirVer/ultisnips'
+" Track the engine.
+
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
+
 call plug#end()
 
 " SHOW WHITHESPACE

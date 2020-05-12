@@ -1,0 +1,1 @@
+/home/tadeu/.vim/plugged/ultisnips/ftdetect/snippets.vim
