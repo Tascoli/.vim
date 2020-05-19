@@ -37,9 +37,9 @@ Entre no diretório de instalação.
     sudo make distclean
     git pull
 	./configure --with-features=huge --enable-cscope --enable-multibyte --enable-rubyinterp --enable-pythoninterp --enable-python3interp --prefix=/usr/local/ --with-tlib=ncurses
-	sudo make VIMRUNTIMEDIR=/usr/local/vim/share/vim/vim82
+	sudo make VIMRUNTIMEDIR=/usr/local/share/vim/vim82
 	sudo make install
-
+    vim --version
 ---
 
 Alguns comandos interessantes:
