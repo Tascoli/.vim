@@ -156,7 +156,26 @@ Atalho | Ação
 
 - [Vim Devicons](https://vimawesome.com/plugin/vim-devicons):
 
-    Adiciona icones de desenvolvimento.
+    Adiciona icones de desenvolvimento. É necessário a instalação das fontes
+    abaixo
+
+    - Linux
+
+        ```bash
+        mkdir -p ~/.local/share/fonts
+        cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+
+        fc-cache -vf ~/.local/share/fonts/
+        ```
+
+
+    - MacOS X
+
+        ```bash
+        cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+        ```
+
+
 
 - [IndentGuides](https://vimawesome.com/plugin/indent-guides):
 
