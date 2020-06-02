@@ -181,7 +181,7 @@ Plug 'junegunn/goyo.vim'                " Distraction Free
 Plug 'kien/ctrlp.vim'                   " CtrlP - Search engine
 Plug 'raimondi/delimitmate'             " Autoclose quotes, parentheses, etc ...
 Plug 'tomasr/molokai'                   " Molokai Colorscheme
-
+Plug 'gruvbox-community/gruvbox'        " Gruvbox Colorscheme
 Plug 'SirVer/ultisnips'
 " Track the engine.
 
@@ -204,7 +204,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 " Download and put your colorschemes in colors/
 "
 set t_Co=256
-colorscheme afterglow
+colorscheme gruvbox
 "
 "" Opções Colorscheme:
 " afterglow, wombat256mod, railscasts2
@@ -234,7 +234,7 @@ let g:airline#extensions#whitespace#enabled = 1 " Whitespace Machine enable/disa
 " Airline Themes
 
 "
-let g:airline_theme='bubblegum'
+let g:airline_theme='gruvbox'
 " options: bubblegum, luna, fairyfloss, fruit_puncha, hybridline,
 " jellybeans, kolor, molokai, murmur, onedark, ravenpower, tomorrow,
 
