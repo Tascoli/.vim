@@ -290,3 +290,15 @@ let g:indent_guides_enable_on_vim_startup = 1   " Enable on starup
 
 "" Enable NERDCommenterToggle to check all selected lines is commented or not
 "let g:NERDToggleCheckAllLines = 1
+
+"    ULTISNIPERs
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+
