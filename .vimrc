@@ -181,12 +181,10 @@ Plug 'junegunn/goyo.vim'                " Distraction Free
 Plug 'kien/ctrlp.vim'                   " CtrlP - Search engine
 Plug 'raimondi/delimitmate'             " Autoclose quotes, parentheses, etc ...
 Plug 'tomasr/molokai'                   " Molokai Colorscheme
-Plug 'gruvbox-community/gruvbox'        " Gruvbox Colorscheme
-Plug 'SirVer/ultisnips'
-" Track the engine.
+Plug 'morhetz/gruvbox'                  " Gruvbox Colorscheme
 
-" Snippets are separated from the engine. Add this if you want them:
-Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'                 " Track the engine.
+Plug 'honza/vim-snippets'               " Snippets are separated from the engine.
 
 call plug#end()
 
@@ -204,6 +202,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 " Download and put your colorschemes in colors/
 "
 set t_Co=256
+set background=dark
 colorscheme gruvbox
 "
 "" Opções Colorscheme:
