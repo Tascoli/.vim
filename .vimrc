@@ -41,9 +41,9 @@ set autoindent              " New lines inherit the indentation of previous line
 " Showing line numbers, length and wrap
 set number                  " show line numbers
 set showbreak=...           " add "..." when line wrapping
-set tw=79                   " width of document (used by gd)
+"set tw=79                   " width of document (used by gd)
 "set nowrap                 " don't automatically wrap on load
-"set fo-=t                  " don't automatically wrap text when typing
+set fo-=t                  " don't automatically wrap text when typing
 set linespace=4             " add some line space for easy reading
 set colorcolumn=80
 highlight colorcolumn ctermbg=243
@@ -181,7 +181,17 @@ Plug 'junegunn/goyo.vim'                " Distraction Free
 Plug 'kien/ctrlp.vim'                   " CtrlP - Search engine
 Plug 'raimondi/delimitmate'             " Autoclose quotes, parentheses, etc ...
 Plug 'tomasr/molokai'                   " Molokai Colorscheme
+<<<<<<< Updated upstream
 Plug 'morhetz/gruvbox'                  " Gruvbox Colorscheme
+=======
+Plug 'gruvbox-community/gruvbox'        " Gruvbox Colorscheme
+Plug 'kyoz/purify', { 'rtp': 'vim' }    " Purify Colorscheme
+Plug 'rakr/vim-one'
+
+Plug 'SirVer/ultisnips'
+
+" Track the engine.
+>>>>>>> Stashed changes
 
 Plug 'SirVer/ultisnips'                 " Track the engine.
 Plug 'honza/vim-snippets'               " Snippets are separated from the engine.
@@ -203,7 +213,12 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 "
 set t_Co=256
 set background=dark
+<<<<<<< Updated upstream
 colorscheme gruvbox
+=======
+colorscheme one
+
+>>>>>>> Stashed changes
 "
 "" Opções Colorscheme:
 " afterglow, wombat256mod, railscasts2
@@ -233,7 +248,9 @@ let g:airline#extensions#whitespace#enabled = 1 " Whitespace Machine enable/disa
 " Airline Themes
 
 "
-let g:airline_theme='gruvbox'
+"let g:airline_theme='gruvbox'
+let g:airline_theme='one'
+
 " options: bubblegum, luna, fairyfloss, fruit_puncha, hybridline,
 " jellybeans, kolor, molokai, murmur, onedark, ravenpower, tomorrow,
 
