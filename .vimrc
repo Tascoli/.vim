@@ -181,20 +181,12 @@ Plug 'junegunn/goyo.vim'                " Distraction Free
 Plug 'kien/ctrlp.vim'                   " CtrlP - Search engine
 Plug 'raimondi/delimitmate'             " Autoclose quotes, parentheses, etc ...
 Plug 'tomasr/molokai'                   " Molokai Colorscheme
-<<<<<<< Updated upstream
 Plug 'morhetz/gruvbox'                  " Gruvbox Colorscheme
-=======
-Plug 'gruvbox-community/gruvbox'        " Gruvbox Colorscheme
 Plug 'kyoz/purify', { 'rtp': 'vim' }    " Purify Colorscheme
 Plug 'rakr/vim-one'
 
-Plug 'SirVer/ultisnips'
 
-" Track the engine.
->>>>>>> Stashed changes
 
-Plug 'SirVer/ultisnips'                 " Track the engine.
-Plug 'honza/vim-snippets'               " Snippets are separated from the engine.
 
 call plug#end()
 
@@ -213,12 +205,9 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 "
 set t_Co=256
 set background=dark
-<<<<<<< Updated upstream
-colorscheme gruvbox
-=======
+"colorscheme gruvbox
 colorscheme one
 
->>>>>>> Stashed changes
 "
 "" Opções Colorscheme:
 " afterglow, wombat256mod, railscasts2
@@ -260,7 +249,8 @@ map <C-b> :NERDTreeToggle<CR>
 
 " Nerd Git Plugin
 "
-let g:NERDTreeIndicatorMapCustom = {
+"
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
